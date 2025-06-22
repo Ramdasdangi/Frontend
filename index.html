@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Wellness Dashboard</title>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen">
+        <header class="dashboard-header">
+            <h1 id="dashboard-title">Fitness Dashboard</h1>
+            <p id="dashboard-subtitle">Track your progress, set goals, and stay motivated.</p>
+        </header>
+
+        <div class="theme-switcher">
+            <span id="theme-label">Theme:</span>
+            <button id="theme-toggle-button">☀️ Light</button>
+
+            <span class="mr-3 text-lg font-semibold" id="color-label">Color:</span>
+            <div class="color-picker">
+                <button class="w-8 h-8 rounded-full shadow-md transition-all duration-300 transform hover:scale-110 bg-blue-500 selected" data-color="blue" style="background-color: #3b82f6;"></button>
+                <button class="w-8 h-8 rounded-full shadow-md transition-all duration-300 transform hover:scale-110 bg-green-500" data-color="green" style="background-color: #22c55e;"></button>
+                <button class="w-8 h-8 rounded-full shadow-md transition-all duration-300 transform hover:scale-110 bg-purple-500" data-color="purple" style="background-color: #a855f7;"></button>
+                <button class="w-8 h-8 rounded-full shadow-md transition-all duration-300 transform hover:scale-110 bg-red-500" data-color="red" style="background-color: #ef4444;"></button>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="main-content">
+                <!-- Goals Widget -->
+                <div class="widget-container">
+                    <h3 id="goals-title">Your Goals</h3>
+                    <ul id="goals-list" class="goals-list">
+                        <!-- Goals will be rendered here by JS -->
+                    </ul>
+                </div>
+
+                <!-- Weekly Workout Progress Widget -->
+                <div class="widget-container progress-widget">
+                    <h3 id="weekly-workout-title">Weekly Workout</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-label">
+                            <div>Progress</div>
+                            <div class="text-right">
+                                <span id="weekly-workout-progress-value" class="text-sm font-semibold inline-block">75%</span>
+                            </div>
+                            <div>Progress</div>
+                            <div class="text-right">
+                                <span id="weekly-workout-progress-value" class="text-sm font-semibold inline-block">75%</span>
+                            </div>
+                        </div>
+                        <div class="progress-bg">
+                            <div id="weekly-workout-progress-bar" class="progress-bar gradient-green" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hydration Goal Progress Widget -->
+                <div class="widget-container progress-widget">
+                    <h3 id="hydration-goal-title">Hydration Goal</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-label">
+                            <div>Progress</div>
+                            <div class="text-right">
+                                <span id="hydration-goal-progress-value" class="text-sm font-semibold inline-block">90%</span>
+                            </div>
+                        </div>
+                        <div class="progress-bg">
+                            <div id="hydration-goal-progress-bar" class="progress-bar gradient-blue" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checklist Widget -->
+                <div class="widget-container">
+                    <h3 id="checklist-title">Daily Tasks</h3>
+                    <form id="checklist-form" class="checklist-form">
+                        <input type="text" id="new-task-input" placeholder="Add a new task..." class="flex-grow p-3 rounded-l-lg border">
+                        <button type="submit" class="px-6 py-3 rounded-r-lg font-bold text-white">Add</button>
+                    </form>
+                    <ul id="checklist-list" class="checklist-list">
+                        <!-- Tasks will be rendered here by JS -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-content">
+                <!-- Mood Log Widget -->
+                <div class="widget-container">
+                    <h3 id="mood-title">Daily Mood</h3>
+                    <div id="mood-selector" class="mood-selector">
+                        <button data-emoji="😄" class="p-3 rounded-full text-4xl shadow-md transition-all duration-200 transform hover:scale-110">😄</button>
+                        <button data-emoji="😊" class="p-3 rounded-full text-4xl shadow-md transition-all duration-200 transform hover:scale-110">😊</button>
+                        <button data-emoji="😐" class="p-3 rounded-full text-4xl shadow-md transition-all duration-200 transform hover:scale-110">😐</button>
+                        <button data-emoji="😟" class="p-3 rounded-full text-4xl shadow-md transition-all duration-200 transform hover:scale-110">😟</button>
+                        <button data-emoji="😔" class="p-3 rounded-full text-4xl shadow-md transition-all duration-200 transform hover:scale-110">😔</button>
+                        <button data-emoji="💪" class="p-3 rounded-full text-4xl shadow-md transition-all duration-200 transform hover:scale-110">💪</button>
+                    </div>
+                    <p id="mood-feedback" class="mood-feedback"></p>
+                    <div id="mood-history-container" class="mood-history" style="display: none;">
+                        <h4 id="mood-history-title">Mood History</h4>
+                        <ul id="mood-history-list">
+                            <!-- Mood history will be rendered here by JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coaches Widget -->
+                <div class="widget-container">
+                    <h3 id="coaches-title">Our Coaches</h3>
+                    <div id="coaches-list" class="space-y-4">
+                        <!-- Coaches will be rendered here by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+       
+    
+</body>
+</html>
