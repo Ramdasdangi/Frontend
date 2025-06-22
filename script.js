@@ -119,6 +119,8 @@
             workoutProgressBar.className = `progress-bar ${getClasses('gradient', 'green')}`;
             hydrationProgressBar.className = `progress-bar ${getClasses('gradient', 'blue')}`;
 
+            
+
             // Update Checklist Widget
             document.getElementById('checklist-form').querySelector('input').className = `flex-grow p-3 rounded-l-lg border ${getClasses('light-border')} focus:outline-none focus:ring-2 ${getClasses('bg')}`; // Reset ring color
             document.getElementById('checklist-form').querySelector('button').classList.remove('bg-blue-500', 'bg-green-500', 'bg-purple-500', 'bg-red-500');
@@ -363,9 +365,10 @@
 
         // --- Coaches Widget ---
         const coaches = [
-            { id: 1, name: 'Coach Balram', specialty: 'Strength Training', bio: 'Expert in weightlifting and muscle gain.', imageUrl: 'https://placehold.co/100x100/A78BFA/FFFFFF?text=A' },
-            { id: 2, name: 'Coach Gouri', specialty: 'Yoga & Mindfulness', bio: 'Helps with flexibility and mental well-being.', imageUrl: 'https://placehold.co/100x100/6EE7B7/FFFFFF?text=M' },
-            { id: 3, name: 'Coach Ramdas', specialty: 'Nutrition', bio: 'Guides on healthy eating habits for sustainable results.', imageUrl: 'https://placehold.co/100x100/FDBA74/FFFFFF?text=S' },
+            { id: 1, name: 'Coach Balram', specialty: 'Strength Training', bio: 'Expert in weightlifting and muscle gain.', imageUrl: 'R:\\visual studio\\CodeNova-_Frontend-Domination\\Balram.jpg' },
+            { id: 2, name: 'Coach Gouri', specialty: 'Yoga & Mindfulness', bio: 'Helps with flexibility and mental well-being.', imageUrl: 'R:\\visual studio\\CodeNova-_Frontend-Domination\\gouri.jpg' },
+            { id: 3, name: 'Coach Ramdas', specialty: 'Nutrition', bio: 'Guides on healthy eating habits for sustainable results.', imageUrl: 'R:\\visual studio\\CodeNova-_Frontend-Domination\\ram 11.jpg' },
+            { id: 3, name: 'Coach Sachin', specialty: 'Trainer', bio: 'Gym trainer, Bulking expert.', imageUrl: 'R:\\visual studio\\CodeNova-_Frontend-Domination\\sachin.jpg' },
         ];
         const coachesList = document.getElementById('coaches-list');
 
