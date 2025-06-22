@@ -363,9 +363,9 @@
 
         // --- Coaches Widget ---
         const coaches = [
-            { id: 1, name: 'Coach Alex', specialty: 'Strength Training', bio: 'Expert in weightlifting and muscle gain.', imageUrl: 'https://placehold.co/100x100/A78BFA/FFFFFF?text=A' },
-            { id: 2, name: 'Coach Maya', specialty: 'Yoga & Mindfulness', bio: 'Helps with flexibility and mental well-being.', imageUrl: 'https://placehold.co/100x100/6EE7B7/FFFFFF?text=M' },
-            { id: 3, name: 'Coach Sam', specialty: 'Nutrition', bio: 'Guides on healthy eating habits for sustainable results.', imageUrl: 'https://placehold.co/100x100/FDBA74/FFFFFF?text=S' },
+            { id: 1, name: 'Coach Balram', specialty: 'Strength Training', bio: 'Expert in weightlifting and muscle gain.', imageUrl: 'https://placehold.co/100x100/A78BFA/FFFFFF?text=A' },
+            { id: 2, name: 'Coach Gouri', specialty: 'Yoga & Mindfulness', bio: 'Helps with flexibility and mental well-being.', imageUrl: 'https://placehold.co/100x100/6EE7B7/FFFFFF?text=M' },
+            { id: 3, name: 'Coach Ramdas', specialty: 'Nutrition', bio: 'Guides on healthy eating habits for sustainable results.', imageUrl: 'https://placehold.co/100x100/FDBA74/FFFFFF?text=S' },
         ];
         const coachesList = document.getElementById('coaches-list');
 
